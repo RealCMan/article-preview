@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+/* - Very Dark Grayish Blue: hsl(217, 19%, 35%)
+- Desaturated Dark Blue: hsl(214, 17%, 51%)
+- Grayish Blue: hsl(212, 23%, 69%)
+- Light Grayish Blue: hsl(210, 46%, 95%)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  margin: 200px 350px;
+  background-color: white;
+  height: 50vh;
+  width: 65vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftside {
+  width: 50%;
+  height: 100%;
+  background-image: url("images/drawers.jpg");
+}
+
+.rightside {
+  width: 50%;
+  padding: 75px;
+}
+
+.title {
+  color: black;
+}
+
+.summary {
+  margin: 10px 0px;
+  line-height: 22px;
+}
+
+.summary.grey-text {
+  color: hsl(217, 19%, 35%);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  border-radius: 100%;
+}
+
+.author .title {
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.author .grey-text {
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+}
+
+.share-btn {
+  background-color: hsl(210, 46%, 95%);
+  border: none;
+  border-radius: 100%;
+  padding: 12px 14px;
+}
+
+.share-btn:hover {
+  background-color: #6e8098;
+  color: hsl(210, 46%, 95%);
+}
+
+.share-btn.open {
+  background-color: #6e8098;
+  color: hsl(210, 46%, 95%);
+}
+
+.share-box {
+  display: none;
+}
+
+.share-box.open {
+  display: block;
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(212, 23%, 69%);
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 1px 4px 4px hsl(212, 23%, 69%);
+  position: absolute;
+  top: 48%;
+  left: 73%;
+}
+
+.share-box i {
+  color: hsl(210, 46%, 95%);
+}
